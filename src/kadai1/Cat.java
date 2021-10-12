@@ -3,9 +3,10 @@ import java.io.*;
 
 public class Cat {
 	public static void main(String args[]){
-		if(args.length != 1){
-			System.exit(1);
+		if(args.length == 0){
+			args[0] = Hyoujyun.prg();
 		}
+
 
 		String path = args[0];
 		try{
